@@ -1,13 +1,10 @@
 <nav>
-  <ul>
-    <li>
-      Home
-    </li>
-    <li>
-      Work
-    </li>
-    <li>
-      About
-    </li>
-  </ul>
+ <nav> <ul>
+    {% for item in site.data.navigation %}
+      <li>
+        <a href="#">
+{{item}}
+</a> </li>
+{% endfor %}
+</ul> </nav>
 </nav>
