@@ -1,10 +1,12 @@
-<nav>
- <nav> <ul>
+ <nav> 
+  <ul>
     {% for item in site.data.navigation %}
       <li>
-        <a href="#">
-{{item}}
-</a> </li>
-{% endfor %}
-</ul> </nav>
+        <a href="{{item.link}}">       
+       {{item.title}}
+        </a> 
+      </li>
+  {% endfor %}
+</ul>
 </nav>
+
